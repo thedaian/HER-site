@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel='stylesheet' media='screen' href='fakerealty.css'>
+	<title>Real Living HER Custom Business Cards</title>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2540289-2";
+urchinTracker();
+[GOOGLE_ORDERING]
+</script>
+<script src="jquery-1.4.min.js" type="text/javascript"></script>
+<script language="javascript">
+function calcPrice(amount, type)
+{
+	var back=$("#backID").val();
+	$.get("priceCalc.php", {"amount": amount, "type": type, "back": back}, function(data) {
+		$("#price").html(data);
+	});
+}
+
+$(document).ready(function()
+{
+	//gallery popup code
+	$("a.galleryPopup").click(function()
+	{
+		//display a popup, based on ID value
+		var id=$(this).attr("id");
+		$.get("popup.php", {"id": id}, function(data) {
+			$("#data").html(data);
+			$("#popup").removeClass("hidden");
+			$("#popup").addClass("show");
+		});
+	});
+	//closing the popup
+	$("a.close").click(function()
+	{
+		$("#popup").removeClass("show");
+		$("#popup").addClass("hidden");
+	});
+	$("#body").click(function()
+	{
+		$("#popup").removeClass("show");
+		$("#popup").addClass("hidden");
+	});
+	$("#top").click(function()
+	{
+		$("#popup").removeClass("show");
+		$("#popup").addClass("hidden");
+	});
+	$("#footer").click(function()
+	{
+		$("#popup").removeClass("show");
+		$("#popup").addClass("hidden");
+	});
+	$("#laserQuantity").change(function()
+	{
+		$("#lithoQuantity").val('0');
+		var amount=$("#laserQuantity").val();
+		if(amount>0)
+		{
+			$("#info").html(amount+" laser printed cards.");
+			calcPrice(amount, "laser");
+		} else {
+			$("#info").html("");
+			calcPrice(amount, "laser");
+		}
+	});
+	$("#lithoQuantity").change(function()
+	{
+		$("#laserQuantity").val('0');
+		var amount=$("#lithoQuantity").val();
+		if(amount>0)
+		{
+			$("#info").html(amount+" litho laminated printed cards.");
+			calcPrice(amount, "litho");
+		} else {
+			$("#info").html("");
+			calcPrice(amount, "litho");
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div id="popup" class="hidden"><div id="data"></div><a href="#" class="close">Close</a></div>
+
+<div id='top'>
+<a href="http://barchok.com/p/cards/"><img src='her_logo.jpg'></a>
+</div>
+<ul class="ttb_menu" id="nav">
+	<li><a href="index.php">Start Page</a></li>
+	<li><a href="order_status.php">Order Status</a></li>
+	<li><a href="my_files.php">My Uploaded Files</a></li>
+	<li><a href="products.php">Products</a></li>
+	<li><a href="prices.php">Pricing</a></li>
+	
+</ul>
+<div id='body'>
+[PAGE_BODY]
+</div>
+
+<div id='footer'>
+<p><b>Todd Barchok - Columbus, OH</b></p>
+<p>©2010 Todd Barchok - HER, Real Living, and all HER or Real Living logos and trademarks are © and property of Real Living, Inc.</p>
+</div>
+
+</body>
+</html>

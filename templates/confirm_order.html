@@ -1,0 +1,30 @@
+<h2>[TITLE]</h2>
+<div id="ordersummary">
+<form action="order.php" method="POST">
+<input type="hidden" name="next_page" value="[NEXT_PAGE]">
+[ORDER_INFO]
+[info]<br>
+<img src="card_templates/[fileName]" height="180" width="315">
+[BACKSIDE]
+<br>
+<b>subtotal: </b>$[subtotal]<br/>
+<b>+ tax (OH 6.75%): </b>$[tax]
+<h2>total: $[total]</h2>
+<br><br>
+<input type="checkbox" name="manager" value="yes"> Bill my manager.<br>
+<select name="manager">
+<option value="0">Select a Manager</option>
+<option value="1">Bob Smith</option>
+</select>
+<br><br>
+<input type="submit" value="Proceed to Checkout">
+</form>
+</div>
+<h2>what next?</h2>
+<p>Here's what happens between the time your order is paid and the time you get your cards:</p>
+
+<ul style='list-style:none;'>
+	<li>1. <b>Studio Polaris</b> will send you a pdf proof via the email address you provided, based off of the design template you chose</li>
+	<li style='margin-bottom:30px; margin-top:30px;'>2. <b>You</b> reply with any changes, additions, or design considerations for your business cards</li>
+	<li>3. <b>Studio Polaris</b> will send you a second proof (again via email) for your final approval.  After that, your cards are printed and delivered to you!</li>
+</ul>

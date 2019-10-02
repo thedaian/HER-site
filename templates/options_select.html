@@ -1,0 +1,78 @@
+<div class="left">
+<h2>[TITLE]</h2>
+<form action="order.php" method="POST">
+<input type="hidden" name="next_page" value="[NEXT_PAGE]">
+[ORDER_INFO]
+<table cellspacing="10" border="0">
+<tr>
+	<td valign="top" width="50%">
+		<h3 style="margin:0px;">Laser Cards</h3>
+		<p  style="margin-top:0px;">(toner on 12pt CIS card stock, one sided)</p>
+		<p><i>Laser cards can be printed within 48 hours of approval - ready for pickup, mail, or courier</i></p>
+	</td>
+	<td valign="top" style="border-left:1px solid #444; padding-left:30px;">
+		<select name="laser_quantity" id="laserQuantity">
+			<option value="0">Select a Quantity of</option>
+			[LASER_PRICES]
+		</select> cards.<br/><br/>
+		
+		<!--<input type="checkbox" name="laserback" value="yes">-->
+
+	</td>
+</tr>
+<tr><td colspan="2" class="center"><p><i>or</i></p></td></tr>
+<tr>
+	<td valign="top" width="50%">
+		<h3 style="margin:0px;">Laminated (glossy) Cards</h3>
+		<p  style="margin-top:0px;">(ink on 16pt C2S card stock - UV laminated, one or two sided)</p>
+		<p><i>Litho cards are slightly heavier than laser cards and are glossy. They will be delivered within 7 - 10 business days after approval - ready for pickup, mail, or courier</i></p>
+	</td>
+	<td valign="top" style="border-left:1px solid #444; padding-left:30px;">
+		<select name="litho_quantity" id="lithoQuantity">
+			<option value="0">Select a Quantity of</option>
+			[LITHO_PRICES]
+		</select> cards.<br/><br/>
+
+		<!--<input type="checkbox" name="lithoback" value="yes">-->[BACK_LITHO]
+	</td>
+</tr>
+</table>
+</div>
+
+<div id="ordersummary" class="center">
+<h2>Order Information</h2>
+<span id="info" class="center">[info]</span><br>
+<h4 class="dark_gray">Front</h4>
+<img src="card_templates/large/[fileName]" height="180" width="315" class="template">
+[BACKSIDE]
+<br>
+<div id="price" class="left">
+<b>Subtotal: </b>$[subtotal]<br/>
+<b>+ tax (OH 6.75%): </b>$[tax]
+<h2>Total: $[total]</h2>
+<br></div>
+<div class="right">
+<input type="radio" name="manager" value="yes"> Bill my manager.<br>
+<select name="manager" id="select_manager">
+<option value="0">Select a Manager</option>
+<option value="0">Susan Mullenix</option>
+<option value="0">Jacqueline D. Lewis</option>
+<option value="0">Edward Caldwell</option>
+<option value="0">Carl Heister</option>
+<option value="0">Linda Altomare</option>
+<option value="0">Bob Case</option>
+<option value="0">Linda Whiting</option>
+<option value="0">Dwight Eberhart</option>
+<option value="0">Bob McCarthy</option>
+<option value="0">Dixie Staley</option>
+<option value="0">Edward Caldwell</option>
+<option value="0">Carl Heister</option>
+<option value="0">Pamela Powell</option>
+<option value="0">Gloria Rau</option>
+<option value="0">Tom Holcombe</option>
+</select>
+<br><br>
+<input type="radio" name="manager" value="no"> Pay via credit card.<br>
+<input type="submit" value="Proceed to Checkout"></div>
+</form>
+</div>

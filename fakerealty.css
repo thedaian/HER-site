@@ -1,0 +1,361 @@
+br
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#templates h4
+{
+	padding-top: 20px;
+	padding-bottom: 5px;
+}
+
+#popup {
+	position: absolute;
+	background-color: #fff;
+	border: 2px solid #000;
+	text-align: center;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.show
+{
+	display: inline;
+	left: 30%;
+	top: 30%;
+	z-index: 99;
+}
+
+.spaced
+{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.center
+{
+	text-align: center;
+}
+/*
+div.center
+{
+	margin-left: 20%;
+}*/
+
+img.template
+{
+	border: 1px solid #222;
+}
+
+#data h2
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#data img
+{
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+#order_info_form
+{
+	width: 50%;
+	/*border: 1px solid black;*/
+	float: left;
+}
+
+body
+{
+	padding:0px;
+	margin:0px;
+	font-family:Myriad Pro, Myriad, Arial, sans-serif;
+	color: #505352;
+	/*
+	/*background-color: #fffcdd;*/
+}
+
+
+#top
+{
+	background: url(top_bg.jpg) repeat-x;
+	margin-top:0px;
+	height:132px;
+	margin-top:0px;
+	color: #fff;
+	
+}
+
+#nav
+{
+	text-align:left;
+	float: left;
+}
+
+#top img {
+	border: 0px;
+}
+/*
+#top #nav a, #top #nav a:active, #top #nav a:visited
+{
+	color: white;
+	text-decoration:none;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+#body a, #body a:active, #body a:visited
+{
+	color: #c00;
+}
+
+#body a:hover
+{
+	text-decoration:underline;
+}
+
+#top #nav a:hover
+{
+	text-decoration:underline;
+}
+*/
+ul
+{
+	list-style:none;
+}
+
+ul.ltr_menu
+{
+	display: block;
+}
+
+ul.ltr_menu li
+{
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+ul.ttb_menu
+{
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	margin: 5px;
+	padding: 0px;
+}
+
+ul.ttb_menu li
+{
+	padding: 5px 10px;
+	font-size: small;
+}
+
+#template_options
+{
+	width: 90%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+#template_options li
+{
+	width: 30%;
+	font-weight: bold;
+}
+
+div#body
+{
+	padding:20px;
+	margin-top:-20px;
+	margin-left: 100px;
+}
+
+#body h1
+{
+	color:#c00;
+	margin-top:0px;
+	text-align: center;
+}
+
+#body h2
+{
+	margin-top:0px;
+	margin-bottom: 0px;
+}
+
+#body h3 {
+	margin-top: 0px;
+	margin-bottom:0px;
+}
+
+#body h4 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#body p
+{
+	margin-top:0px;
+	line-height: 150%;
+	font-size: 15px;
+	color: #777;
+}
+
+#left {
+	border: 2px solid #255c1b;
+	background: #368127 none repeat-x;
+	color: #fff;
+	padding:10px;
+}
+
+#right {
+	border: 2px solid #255c1b;
+	background: #368127 none repeat-x;
+	color: #fff;
+	padding:10px;
+}
+
+#footer
+{
+	clear:both;
+	text-align: center;
+}
+
+#body #footer p
+{
+	font-size:small;
+	margin-bottom:0px;
+}
+
+#left h2, #center h2, #right h2 {
+	margin-top: 0;
+}
+
+#preview {
+	margin-bottom: 15px;
+}
+
+#loginboxes
+{
+	background-color: #f5f0a3;
+	border: 2px solid #a1990b;
+	width: 30%;
+}
+
+.darkbox {
+	border: 2px solid #a1990b;
+	background-color: #c6c284;
+
+}
+#splogo {
+	
+}
+
+
+#kellerlogo {
+	float: right;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#left p, #right p {
+	color: #eee;
+}
+
+#left h1, #right h1 {
+	color: #fff;
+}
+
+#left h2, #right h2 {
+	color: #fff;
+}
+
+#loginboxes p {
+	color: #666;
+}
+
+#loginboxes h1 {
+	color: #333;
+}
+
+#loginboxes h2 {
+	color: #555;
+}
+
+.darkbox {
+	border: 2px solid #255c1b;
+	background-color: #215018;
+	padding: 0px;
+}
+
+.darkbox p
+{
+}
+
+#ordersummary {
+	border-left: 2px solid #777;
+	margin-left: 50%;
+	width: 40%;
+	text-align: center;
+	direction: ltr;
+	margin-right:15px;
+	padding-bottom: 10px;
+}
+
+#ordersummary  #price
+{
+	text-align: left;
+	margin-left: 10%;
+}
+
+#ordersummary .right
+{
+	text-align: left;
+}
+
+.left {
+	float: left;
+	width: 50%;
+}
+
+.right {
+	margin-left: 45%;
+}
+
+
+#dek {POSITION:absolute;VISIBILITY:hidden;Z-INDEX:200;}
+
+
+.center-inline {
+	margin-left: 45%;
+}
+
+.red
+{
+	color: #c00;
+}
+
+.gray
+{
+	color: #777;
+}
+
+.dark_gray
+{
+	color: #4d4d4d;
+}
+
+.small
+{
+	font-size: small;
+}

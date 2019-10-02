@@ -1,0 +1,64 @@
+<div id="order_info_form"><h2>[TITLE]</h2>
+<form action="order.php" method="POST">
+<input type="hidden" name="next_page" value="[NEXT_PAGE]">
+[ORDER_INFO]
+<input type="hidden" name="newuser" value="true">
+<table>
+<tr><td colspan="2"><b>Please fill in information as would you like listed on your business card.</b><br/></td></tr>
+<tr><td colspan="2"><br><b>Login Info</b><br/></td></tr>
+<tr><td align="right">Email address</td><td><input type="text" name="email" value="[email_address]"></td></tr>
+[REGISTER_FORM]
+[ERROR]
+<tr><td colspan="2"><b>Card Information</b><br/></td></tr>
+<tr><td align="right">Name</td><td><input type="text" name="name" value="[name]"></td></tr>
+<tr><td align="right">Designation</td>
+<td><select name="position" id="designation">
+<option value="0">Choose a Designation</option>
+[DESIGNATIONS]
+</select>
+</td></tr>
+<tr><td align="right">Email to appear on Business Card</td><td><input type="text" name="altemail" value="[altemail]"></td></tr>
+
+<tr><td><b>Phone</b></td></tr>
+<tr><td align="right">Direct</td><td><input type="text" name="direct" value="[direct]"> (xxx) xxx-xxxx</td></tr>
+<tr><td align="right">Office</td><td><input type="text" name="office" value="[office]"> (xxx) xxx-xxxx</td></tr>
+<tr><td align="right">Cell</td><td><input type="text" name="cell" value="[cell]"> (xxx) xxx-xxxx</td></tr>
+<tr><td align="right">Fax</td><td><input type="text" name="fax" value="[fax]"> (xxx) xxx-xxxx</td></tr>
+<tr><td align="right">Other</td><td><input type="text" name="other" value="[other]"> (xxx) xxx-xxxx</td></tr>
+<tr><td align="right" width="40%" valign="top">Please list order of phone numbers to appear on your business card.</td><td width="60%"><textarea name="phone_order" rows="4" cols="18"></textarea></td></tr>
+
+<tr><td colspan="2"><b>Address</b></td></tr>
+<tr><td align="right"></td><td><textarea name="address" rows="4" cols="18">Split this up into sections[address]</textarea></td></tr>
+
+<tr><td colspan="2"><b>Website</b></td></tr>
+<tr><td align="right">http://</td><td><input type="text" name="website" value="[website]"></td></tr>
+
+<tr><td colspan="2"><b>Slogan</b></td></tr>
+<tr><td align="right"></td><td><textarea name="slogan" rows="4" cols="18">[slogan]</textarea></td></tr>
+
+<tr><td colspan="2"><b>Special instructions</b></td></tr>
+<tr><td align="right" width="40%">Please use this space to list any special instructions, awards, designations, or design considerations for your business cards.</td><td width="60%"><textarea name="special" rows="6" cols="30"></textarea></td></tr>
+<!--
+<tr><td colspan="2"><b>Picture</b></td></tr>
+<tr><td align="right"><p><b>Current picture</b></p>
+<img style="border:1px solid #333;">
+<p>upload a new picture, click <a href="../steptwo/changePicture.php">here</a></p>
+</td></tr>-->
+<tr><td></td><td><br><input type="submit" value="Create Account"></input></td>
+</table>
+</form>
+<br><br>
+</div>
+<h2>Returning Customers</h2>
+<br><br><b>Login Info</b><br>
+<form method="POST" action="order.php">
+<input type="hidden" name="next_page" value="[NEXT_PAGE]">
+[ORDER_INFO]
+<input type="hidden" name="newuser" value="false">
+<table cellspacing="5">
+<tr><td>Email address</td><td><input type="text" name="email" value="[email_address]"></td></tr>
+<tr><td>Password</td><td><input type="password" name="password" value=""></td></tr>
+<tr><td></td>
+<td><input type="submit" value="Login"></td></tr>
+</table>
+</form>

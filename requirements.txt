@@ -1,0 +1,77 @@
+-DONE-
+everything's numbered, all the templates -CHECK
+finish ordering -CHECK
+send email to company when there's business -CHECK
+printing options, etc at the end of the order form -CHECK
+option of beginning ordering from the see template page -CHECK
+choose a front template -CHECK
+choose back template (or none) -CHECK
+add info -CHECK
+checkout: choose card type -CHECK
+then checkout -CHECK
+use template- include back -CHECK
+use template -no back -CHECK
+individual templates, team templates-- seperate links, and clicking each will reload the page with the next template set -CHECK
+front, back -CHECK
+regiration and fill out information on same page, or just login to use your existing info -CHECK
+remove studio polaris link, footer- link-=> email, copywrite 2010 -CHECK
+center front page stuff, more spacing, blue liks -CHECK
+
+-NOT DONE-
+replace HER logo
+(two options: i am paying for my cards
+real living is paying for my cards two options on screen
+who is your manager
+give managers a backend to see who orders card, when
+need list of managers and offices -RECIEVED, ADDING TO SYSTEM SOONish
+steal menu system from quantum printing, everything will likely be template/temporary though -BASIC CHECK, there's no way i'm getting any of it done before monday
+if pay by manager, display request for shipping address
+
+IMPORTANT
+designation- not position -CHECK sort of
+two lines --SEE BELOW
+selectable words list, plus enter box for your own (possibly multiple entry boxes if time)
+special logo uploading
+filename for these: firstname_lastname_time.png
+
+preview information, go back or confirm on same page as 'select card options'
+plus front/back designs.
+drop down box for number of cards, calculate pricing on the fly via ajax, so that the user sees all the 'preview' stuff prior to the final order page
+250, 500, 1000, 1500, 2000, 2500, 3000, 5000 - BASICALLY DONE
+remove the "extra cost" for double sided printing text, just add the cost to the cost cost
+
+add in cvs export in the backend
+magnets?
+tuesday next week: heidi and another one
+
+generally, look at the current HER site (quantum printing) and steal/borrow ideas from them
+possibly add a preview/live preview option, but save that for later
+we could still do a live preview function AND send them a final proof to sign off on.  maybe.  see what paul says if things go well
+
+
+orderID
+cardAmount
+printingType
+clientID
+templateID
+backTemplateID
+
+
+templateID
+front (BIT SET)
+fileName
+cost
+
+
+clientID
+email address
+password
+name
+title
+address
+cell
+home
+office
+fax
+website
+slogan
